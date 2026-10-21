@@ -1,0 +1,458 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohit Gadilohar | Cloud Engineer</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    :root {
+      --bg: #0b1120;
+      --card: #151e30;
+      --green: #5ee6a8;
+      --text: #f1f5f9;
+      --muted: #a7b4c8;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: #0b1120ee;
+      backdrop-filter: blur(12px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 8%;
+      border-bottom: 1px solid #263248;
+    }
+
+    .logo {
+      color: var(--green);
+      font-size: 27px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      list-style: none;
+      font-size: 14px;
+    }
+
+    .nav-links a:hover {
+      color: var(--green);
+    }
+
+    section {
+      padding: 85px 8%;
+      scroll-margin-top: 65px;
+    }
+
+    .hero {
+      min-height: 88vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      background:
+        radial-gradient(ellipse at 90% 20%, #155e4933, transparent 45%);
+    }
+
+    .tag {
+      color: var(--green);
+      letter-spacing: 3px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: clamp(38px, 7vw, 70px);
+      line-height: 1.15;
+      margin: 20px 0;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 24px;
+    }
+
+    h2 span, h1 span {
+      color: var(--green);
+    }
+
+    .hero h3 {
+      font-size: clamp(20px, 3vw, 28px);
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    p {
+      color: var(--muted);
+      max-width: 720px;
+      margin-bottom: 18px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 7px;
+      border: 1px solid var(--green);
+      color: var(--green);
+      transition: 0.3s;
+    }
+
+    .btn.primary {
+      background: var(--green);
+      color: #07130e;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px #5ee6a822;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid #263248;
+      border-radius: 14px;
+      padding: 25px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: var(--green);
+    }
+
+    .card h3 {
+      color: var(--green);
+      margin-bottom: 12px;
+    }
+
+    .skill {
+      display: inline-block;
+      padding: 8px 13px;
+      margin: 5px;
+      border: 1px solid #35445b;
+      border-radius: 6px;
+      color: #dce7f5;
+      background: var(--card);
+    }
+
+    .project-link {
+      display: inline-block;
+      color: var(--green);
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .contact-card {
+      max-width: 650px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: var(--muted);
+      border-top: 1px solid #263248;
+      font-size: 14px;
+    }
+
+    @media (max-width: 650px) {
+      nav {
+        padding: 15px 5%;
+        align-items: flex-start;
+        gap: 12px;
+        flex-direction: column;
+      }
+
+      .nav-links {
+        gap: 12px;
+        flex-wrap: wrap;
+        font-size: 12px;
+      }
+
+      section {
+        padding: 65px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="#home" class="logo">MG.</a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HOME -->
+  <section class="hero" id="home">
+    <div class="tag">WELCOME TO MY PORTFOLIO</div>
+    <h1>Hi, I'm <span>Mohit<br>Gadilohar</span></h1>
+    <h3>Cloud Engineer | DevOps Enthusiast</h3>
+    <p>
+      I am a Computer Science graduate passionate about
+      cloud computing, AWS, automation, Linux, and DevOps.
+      I enjoy building practical projects and learning
+      technologies that solve real-world problems.
+    </p>
+    <div class="buttons">
+      <a href="#projects" class="btn primary">Explore My Projects ↗</a>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="tag">GET TO KNOW ME</div>
+    <h2>About <span>Me</span></h2>
+    <p>
+      Hello! I'm Mohit Gadilohar, a BSc Computer Science
+      graduate focused on building a career in Cloud
+      Engineering and DevOps.
+    </p>
+    <p>
+      I am developing practical skills in AWS, Linux,
+      Git, GitHub, Docker, Jenkins, networking, and
+      CI/CD pipelines. My goal is to create reliable,
+      scalable, and automated cloud infrastructure.
+    </p>
+    <div class="grid">
+      <div class="card">
+        <h3>☁️ Cloud Computing</h3>
+        <p>Learning AWS services, networking, EC2, S3,
+          IAM, and cloud architecture.</p>
+      </div>
+      <div class="card">
+        <h3>⚙️ DevOps</h3>
+        <p>Practicing Docker, Jenkins, Git, and CI/CD
+          automation workflows.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="tag">MY TECHNICAL TOOLKIT</div>
+    <h2>Technical <span>Skills</span></h2>
+
+    <div class="card">
+      <h3>Cloud & AWS</h3>
+      <span class="skill">AWS EC2</span>
+      <span class="skill">Amazon S3</span>
+      <span class="skill">IAM</span>
+      <span class="skill">VPC</span>
+      <span class="skill">RDS</span>
+      <span class="skill">Load Balancer</span>
+      <span class="skill">CloudWatch</span>
+    </div>
+    <br>
+
+    <div class="card">
+      <h3>DevOps & Tools</h3>
+      <span class="skill">Linux</span>
+      <span class="skill">Git</span>
+      <span class="skill">GitHub</span>
+      <span class="skill">Docker</span>
+      <span class="skill">Jenkins</span>
+      <span class="skill">CI/CD</span>
+      <span class="skill">Bash</span>
+      <span class="skill">Nginx</span>
+    </div>
+    <br>
+
+    <div class="card">
+      <h3>Programming & Web</h3>
+      <span class="skill">Python</span>
+      <span class="skill">Java</span>
+      <span class="skill">SQL</span>
+      <span class="skill">HTML</span>
+      <span class="skill">CSS</span>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="tag">WHAT I'VE BUILT</div>
+    <h2>My <span>Projects</span></h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>🌐 Five Websites on AWS EC2</h3>
+        <p>
+          Hosted five websites on one EC2 Linux instance
+          using Nginx and different ports.
+        </p>
+        <p><strong>Tools:</strong> AWS, Linux, Nginx, HTML</p>
+        <a class="project-link"
+           href="https://github.com/Mohitgadilohar45"
+           target="_blank" rel="noopener noreferrer">
+          View GitHub ↗
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>🔄 Jenkins CI/CD</h3>
+        <p>
+          Practiced Jenkins jobs and automated build
+          workflows to understand CI/CD fundamentals.
+        </p>
+        <p><strong>Tools:</strong> Jenkins, Linux, Git</p>
+        <a class="project-link"
+           href="https://github.com/Mohitgadilohar45"
+           target="_blank" rel="noopener noreferrer">
+          View GitHub ↗
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>🗄️ AWS RDS with EC2</h3>
+        <p>
+          Practiced connecting an EC2 application
+          environment with an Amazon RDS database.
+        </p>
+        <p><strong>Tools:</strong> AWS, EC2, RDS, MySQL</p>
+        <a class="project-link"
+           href="https://github.com/Mohitgadilohar45"
+           target="_blank" rel="noopener noreferrer">
+          View GitHub ↗
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>🐳 Docker Web Application</h3>
+        <p>
+          Practiced running web applications in
+          Docker containers and mapping host ports.
+        </p>
+        <p><strong>Tools:</strong> Docker, Nginx, Linux</p>
+        <a class="project-link"
+           href="https://github.com/Mohitgadilohar45"
+           target="_blank" rel="noopener noreferrer">
+          View GitHub ↗
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section id="certificates">
+    <div class="tag">LEARNING & GROWTH</div>
+    <h2>My <span>Certificates</span></h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>☁️ AWS Learning</h3>
+        <p>AWS Skill Builder learning and cloud training.</p>
+      </div>
+      <div class="card">
+        <h3>🐍 Python Programming</h3>
+        <p>Python programming course certificate.</p>
+      </div>
+      <div class="card">
+        <h3>☕ Java Programming</h3>
+        <p>Java programming course certificate.</p>
+      </div>
+      <div class="card">
+        <h3>🗃️ SQL</h3>
+        <p>SQL learning and database practice.</p>
+      </div>
+    </div>
+    <p style="margin-top:20px">
+      Add your actual certificate links or images to
+      these cards when you are ready.
+    </p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="tag">LET'S CONNECT</div>
+    <h2>Contact <span>Me</span></h2>
+
+    <div class="card contact-card">
+      <h3>Interested in working together?</h3>
+      <p>
+        I am looking for opportunities to begin my
+        career in Cloud Engineering, AWS, and DevOps.
+        Let's connect!
+      </p>
+
+      <p>📍 Location: Maharashtra, India</p>
+
+      <div class="buttons">
+        <a class="btn primary"
+           href="https://github.com/Mohitgadilohar45"
+           target="_blank" rel="noopener noreferrer">
+          GitHub ↗
+        </a>
+
+        <a class="btn"
+           href="https://www.linkedin.com/"
+           target="_blank" rel="noopener noreferrer">
+          LinkedIn ↗
+        </a>
+
+        <!-- Replace with your email address -->
+        <a class="btn"
+           href="mailto:YOUR_EMAIL@example.com">
+          Email Me ✉
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p style="margin:0 auto">
+      © 2026 Mohit Gadilohar | Cloud Engineer Portfolio
+    </p>
+    <p style="margin:5px auto 0">
+      Built with HTML & CSS 💚
+    </p>
+  </footer>
+
+</body>
+</html>
+
